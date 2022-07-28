@@ -1,5 +1,4 @@
-
-const foreverTrue = () => true 
+const foreverTrue = () => true;
 
 foreverTrue();
 
@@ -9,7 +8,7 @@ const HelloAsync = async () => {
     }
 , 5000)};
 
-HelloAsync()
+HelloAsync();
 
 function* generator() {
     let i = 0;
@@ -19,10 +18,9 @@ function* generator() {
         yield i;
      }
    }
-}
+};
 
-const callGen = generator()
+const callGen = generator();
 
 console.log(callGen.next());
 console.log(callGen.next());
-
